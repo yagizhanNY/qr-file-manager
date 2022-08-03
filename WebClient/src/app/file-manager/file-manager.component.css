@@ -1,0 +1,19 @@
+.t-table {
+    width: 100%;
+  }
+  
+  .t-button-container {
+    padding-bottom: 16px;
+  }
+  
+  .t-button + .t-button {
+    margin-left: 8px;
+  }
+
+  .t-delete-button:hover {
+    cursor: pointer;
+  }
+
+  .t-qr-code:hover {
+    cursor: pointer;
+  }

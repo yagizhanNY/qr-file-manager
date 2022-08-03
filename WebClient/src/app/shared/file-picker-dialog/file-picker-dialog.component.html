@@ -1,0 +1,3 @@
+<h1 mat-dialog-title>Upload file</h1>
+<input #pdfInput hidden="true" type="file" onclick="this.value=null" (change)="pdfInputChange($event)" accept=".pdf"/>
+<button mat-flat-button color="primary" (click)="pdfInput.click()">Choose File (PDF)</button>

@@ -1,0 +1,42 @@
+<div class="container" style="width: 800px; text-align: center;">
+  <!-- <div class="row" style="margin-top: 50px;">
+        <div class="mb-3">
+            <label for="file-url" class="form-label">File URL</label>
+            <input type="text" #fileUrl class="form-control" id="file-url" placeholder="/project-1/file-1">
+          </div>
+    </div>
+    <div class="row">
+        <button type="button" #parent (click)="generateQrCode(fileUrl.value)" class="btn btn-primary">Generate</button>
+    </div>
+    <div class="row my-5" style="text-align: center;">
+        <qrcode [qrdata]="qrData" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+    </div> -->
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Generate QR Code</h1>
+          </div>
+        </div>
+      </section>
+  <mat-form-field class="qr-form-field" appearance="fill">
+    <mat-label>Type file URL</mat-label>
+    <input matInput type="text" #fileUrl/>
+    <button
+      *ngIf="fileUrl"
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="fileUrl.value = ''"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+  <p>
+    <button mat-raised-button color="primary" (click)="generateQrCode(fileUrl.value)">Generate QR Code</button>
+  </p>
+    <div class="row my-5" style="text-align: center;">
+        <qrcode [qrdata]="qrData" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+    </div>
+
+  
+</div>

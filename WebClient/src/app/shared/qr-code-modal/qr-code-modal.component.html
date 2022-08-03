@@ -1,0 +1,6 @@
+<div class="row my-5" style="text-align: center;">
+    <qrcode #qrCode [qrdata]="qrData" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+</div>
+<div class="row">
+    <button mat-flat-button color="primary" (click)="saveAsImage()">Save QR Code as Image</button>
+</div>

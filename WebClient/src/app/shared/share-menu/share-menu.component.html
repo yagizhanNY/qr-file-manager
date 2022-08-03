@@ -1,0 +1,44 @@
+<div class="container-fluid py-3" style="text-align: center;">
+    <div class="row">
+        <h3>Share our app!</h3>
+    </div>
+    <div class="row">
+        <share-buttons
+    [theme]="'circles-light'"
+    [include]="[
+      'facebook',
+      'twitter',
+      'linkedin',
+      'pinterest',
+      'reddit',
+      'tumblr',
+      'mix',
+      'viber',
+      'vk',
+      'telegram',
+      'messenger',
+      'whatsapp',
+      'xing',
+      'line',
+      'sms',
+      'email',
+      'print',
+      'copy'
+    ]"
+    [exclude]="[
+      'tumblr',
+      'mix',
+      'viber',
+      'vk',
+      'telegram',
+      'xing',
+      'line',
+      'sms'
+    ]"
+    [show]="4"
+    [url]="'https://twitter.com/'"
+    [title]="'Share Our App!'"
+    [autoSetMeta]="false"
+        ></share-buttons>
+    </div>
+</div>
